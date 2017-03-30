@@ -1,4 +1,4 @@
-package com.sosuna.formacion.spring.springtest.isolated;
+package com.sosuna.formacion.spring.springtest.s01_isolated;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class Level1Service {
 
-    public static final String PREFIX_PROPERTY_NAME = "services.level1.prefix";
+    public static final String PREFIX_PROPERTY_NAME = "s01_isolated.services.level1.prefix";
 
     @Autowired
     private Level2Service l2serv;       // Private field property

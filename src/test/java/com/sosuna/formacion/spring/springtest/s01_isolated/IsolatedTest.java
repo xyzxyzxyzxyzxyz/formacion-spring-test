@@ -1,4 +1,4 @@
-package com.sosuna.formacion.spring.springtest.isolated;
+package com.sosuna.formacion.spring.springtest.s01_isolated;
 
 import org.junit.Test;
 import org.springframework.mock.env.MockEnvironment;
