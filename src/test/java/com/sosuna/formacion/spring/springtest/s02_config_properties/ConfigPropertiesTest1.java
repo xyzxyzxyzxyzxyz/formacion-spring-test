@@ -15,16 +15,16 @@ import static org.junit.Assert.*;
 @RunWith(SpringRunner.class)
 // Loads context according to SpringBoot application configuration defaults.
 // Loads properties from SpringBoot default locations.
+// The problem is that you cannot avoid loading the complete application context
 @SpringBootTest
 @TestPropertySource(
         properties = {
             "s02_config_properties.property1 = MOCK_VALUE_1",
             "s02_config_properties.property2 = MOCK_VALUE_2"
-})
-public class ConfigPropertiesTest {
+        }
 
-    @Autowired
-    private ApplicationContext ctxt;
+)
+public class ConfigPropertiesTest1 {
 
     @Value("${s02_config_properties.property1}")
     private String property1;
